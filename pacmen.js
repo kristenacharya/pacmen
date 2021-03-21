@@ -51,23 +51,19 @@ function update() {
 }
 
 function checkCollisions(item) {
-    focus = (focus + 1) % 2;
-    console.log(focus);
     if (item.position.x + item.velocity.x + item.newimg.width > window.innerWidth || item.position.x + item.velocity.x < 0){
         item.velocity.x = -item.velocity.x;
-        console.log(item.newimg.src);
         if (item.velocity.x < 0){
             direction = 1;
+            item.newimg.src = pacArray[1][0];
         } else {
-            direction = 0;
+            item.newimg.src = pacArray[0][0];
         }
     } 
 
     if (item.position.y + item.velocity.y + item.newimg.height > window.innerHeight || item.position.y + item.velocity.y < 0){
         item.velocity.y = -item.velocity.y;
     }
-
-    item.newimg.src = pacArray[direction][focus];
 }
 
 function makeOne() {
