@@ -1,9 +1,8 @@
-# pacmen
-Factory for making pacmen
-You are given a starter.html code.
-When button "make one" is pressed you need to complete the code 
-to position the new pacman image and add it to the "game" div. It is then added to the array of pacmen, which keeps track of the position and velocity of each pacman.
-You also need to make each pacman bounce off any wall it hits. 
-Start by getting at least one pacman positioned and viewable. 
+# PacMen Exercise
+This is a factory that makes PacMen! Make as many as you'd like, and click Start Game to send them zooming around.
 
-<img src="PacMan1.png">
+## How to Run
+Fork this repository, and clone it to your local machine. Load index.html in your browser and have fun!
+
+## Future Improvements
+For lack of a better term, I'd like to make the movement a little more PacManny.
